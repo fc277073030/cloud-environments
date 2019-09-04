@@ -16,7 +16,7 @@ chartmuseum:
   enabled: false
 chartmuseumServiceLink:
   enabled: true
-  externalName: "chartmuseum.51charts.com"
+  externalName: "chartmuseum.oifipaas.com"
   
 nexus:
   enabled: false
