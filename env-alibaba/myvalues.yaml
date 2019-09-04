@@ -1,17 +1,28 @@
-# Override configuration from https://github.com/jenkins-x/jenkins-x-platform/blob/master/jenkins-x-platform/values.yaml
-chartmuseum:
-  persistence:
-    size: 20Gi
 jenkins:
+  Master:
+    Image: "fc277073030/jenkinsx"
+    ImageTag: "latest" 
   Persistence:
-    Size: 20Gi
-monocular:
-  mongodb:
-    persistence:
-      size: 20Gi
+    Size: 30Gi
+ 
+  Agent:
+    PodTemplates:
+      Maven:
+        Containers:
+          Maven:
+            Image: fc277073030/builder-maven:0.2.648         
+            
+chartmuseum:
+  enabled: false
+chartmuseumServiceLink:
+  enabled: true
+  externalName: "chartmuseum.51charts.com"
+  
 nexus:
-  persistence:
-    size: 20Gi
-tekton:
-  pvc:
-    size: 20Gi
+  enabled: false
+nexusServiceLink:
+  enabled: true
+  externalName: "additional-svc.nexus.svc.cluster.local"
+  
+docker-registry:
+  enabled: false
