@@ -1,7 +1,7 @@
 jenkins:
   Master:
     Image: "fc277073030/jenkinsx"
-    ImageTag: "latest" 
+    ImageTag: "v1" 
   Persistence:
     Size: 30Gi
  
