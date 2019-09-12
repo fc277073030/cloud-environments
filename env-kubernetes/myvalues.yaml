@@ -4,6 +4,7 @@ jenkins:
     ImageTag: "latest" 
   Persistence:
     Size: 30Gi
+  
  
   Agent:
     PodTemplates:
