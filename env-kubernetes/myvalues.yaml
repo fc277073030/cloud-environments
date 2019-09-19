@@ -1,7 +1,7 @@
 jenkins:
   Master:
-    Image: "registry.cn-hangzhou.aliyuncs.com/jenkins-x/jenkins-master"
-    ImageTag: "v1.0" 
+    Image: "soundbusdeveloper/jenkinsx"
+    ImageTag: "lastet" 
   Persistence:
     Size: 30Gi
   
