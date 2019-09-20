@@ -1,7 +1,7 @@
 jenkins:
   Master:
     Image: "soundbusdeveloper/jenkinsx"
-    ImageTag: "0.1" 
+    ImageTag: "0.2" 
   Persistence:
     Size: 30Gi
   
