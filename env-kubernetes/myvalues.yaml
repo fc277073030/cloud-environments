@@ -11,7 +11,7 @@ jenkins:
       Maven:
         Containers:
           Maven:
-            Image: fc277073030/builder-maven:0.2.644       
+            Image: fc277073030/builder-maven:0.1.644       
             
 chartmuseum:
   enabled: false
