@@ -1,9 +1,9 @@
 jenkins:
-  Master:
-    Image: "soundbusdeveloper/jenkinsx"
-    ImageTag: "v1.1" 
-  Persistence:
-    Size: 30Gi
+#   Master:
+#     Image: "soundbusdeveloper/jenkinsx"
+#     ImageTag: "v1.1" 
+#   Persistence:
+#     Size: 30Gi
   
  
   Agent:
