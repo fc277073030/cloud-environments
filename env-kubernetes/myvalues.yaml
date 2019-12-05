@@ -6,12 +6,12 @@ jenkins:
 #     Size: 30Gi
   
  
-  Agent:
-    PodTemplates:
-      Maven:
-        Containers:
-          Maven:
-            Image: fc277073030/builder-maven:0.1.644       
+#   Agent:
+#     PodTemplates:
+#       Maven:
+#         Containers:
+#           Maven:
+#             Image: fc277073030/builder-maven:0.1.644   
             
 chartmuseum:
   enabled: false
